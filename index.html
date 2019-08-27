@@ -1,111 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-  
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
 
-    <!--<h1>Hello, world! Giray Gizem Gülşah</h1>
-    <button class="btn btn-primary">Save Meeee</button>-->
-<!--
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="#">Weather Forecast</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-  
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-  
-        </div>
-      </div>
-    </nav>
-  -->
-    
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>Column 1</h3>
-          <p>Pomodoro</p>
-          <div id="pomodoro-app">
-            <div id="container">
-              <div id="timer">
-                <div id="time">
-                  <span id="minutes">25</span>
-                  <span id="colon">:</span>
-                  <span id="seconds">00</span>
-                </div>
-                <div id="filler"></div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Column 1</h3>
+        <p>Pomodoro</p>
+        <div id="pomodoro-app">
+          <div id="container">
+            <div id="timer">
+              <div id="time">
+                <span id="minutes">25</span>
+                <span id="colon">:</span>
+                <span id="seconds">00</span>
               </div>
-    
-              <div id="buttons">
-                <button id="work">Work</button>
-                <button id="shortBreak">Short Break</button>
-                <button id="longBreak">Long Break</button>
-                <button id="stop">Stop</button>
-              </div>
+              <div id="filler"></div>
+            </div>
+
+            <div id="buttons">
+              <button id="work">Work</button>
+              <button id="shortBreak">Short Break</button>
+              <button id="longBreak">Long Break</button>
+              <button id="stop">Stop</button>
             </div>
           </div>
-    
         </div>
-    
-        <div class="col-sm-6">
-          <h3>Column 2</h3>
-          <p>To Do List</p>
-          <div id="myDIV" class="header">
-            <h2 style="margin:5px">My To Do List</h2>
-            <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span>
+
+        <br></br>
+        <br></br>
+
+        <div class="row bg-success">
+            <div class="col-md-5">
+              <button class="btn btn-success">Save</button>
+            </div>
+            <div class="col-md-5">
+              <button class="btn btn-success">Save</button>
+            </div>
+            <br></br>
+            <br></br>
+          
+      
+            <div class="col-md-5">
+              <button class="btn btn-success">Save</button>
+            </div>
+            <div class="col-md-5">
+              <button class="btn btn-success">Save</button>
+            </div>
           </div>
-    
-          <ul id="myUL">
-            <li class="checked">Pomodoro</li>
-            <li>ToDoList</li>
-            <li>JQuery</li>
-            <li>API</li>
-            <li>AJAX</li>
-            <li>Bootstrap</li>
-          </ul>
-    
-    
-        </div>
+
+
+
       </div>
-      <div class="row bg-success">
-        <div class="col-md-3">
-          <button class="btn btn-success">Save</button>
+
+      <div class="col-sm-6">
+        <h3>Column 2</h3>
+        <p>To Do List</p>
+        <div id="myDIV" class="header">
+          <h2 style="margin:5px">My To Do List</h2>
+          <input type="text" id="myInput" placeholder="Title...">
+          <span onclick="newElement()" class="addBtn">Add</span>
         </div>
-        <div class="col-md-3">
-            <button class="btn btn-success">Save</button>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-success">Save</button>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-success">Save</button>
-        </div>
+
+        <ul id="myUL">
+          <li class="checked">Pomodoro</li>
+          <li>ToDoList</li>
+          <li>JQuery</li>
+          <li>API</li>
+          <li>AJAX</li>
+          <li>Bootstrap</li>
+        </ul>
+
+
       </div>
     </div>
-  
+
+
     
-  </body>
-  <script src="./assets/js/main.js"></script>
+  </div>
+
+
+</body>
+<script src="./assets/js/main.js"></script>
+
 </html>
