@@ -1,5 +1,4 @@
-
-      var map, geocoder, infowindow, elevator;
+var map, geocoder, infowindow, elevator;
       var elevation_pos = {
               lat: -34.397, lng: 150.644
             };

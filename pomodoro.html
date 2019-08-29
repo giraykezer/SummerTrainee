@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/Pstyle.css">
+    
+    
+</head>
+
+<body onload="fadeIn()">
+
+    <div id="wrapper">
+    </div>
+    <div class="container" id="container">
+      <h1 id="main-title">Pomodoro Clock</h1>
+    
+      <div>
+            
+        <div class="timer">
+          <h2 id="time-display"><span id="displayLengthMins">25</span>:<span id="displayLengthSeconds">00</span></h2>
+        </div>
+    
+        <!--
+    <h2 id="time-display"><span id="sessionLengthMins">25</span>:<span id="sessionLengthSeconds">00</span></h2>
+    -->
+    
+        <button class="btn btn-main" id="start-btn" onclick="startStopTimer()">Start</button>
+        <button class="btn btn-main" id="reset" onclick="resetTimer()">Reset</button>
+      </div>
+    
+    
+      <div>
+        <h2>Session Length</h2>
+        <button class="btn btn-adjuster" id="sessionMinus" onclick="adjustSesh('minus')">-</button>
+        <div class="amt"  id="sessionLengthChoice">25</div>
+        <button class="btn btn-adjuster" id="sessionPlus" onclick="adjustSesh('plus')">+</button>
+        <h2>Break Length</h2>
+        <button class="btn btn-adjuster" id="breakMinus" onclick="adjustBreak('minus')">-</button>
+        <p class="amt" id="breakLengthChoice">5</p>
+        <button class="btn btn-adjuster" id="breakPlus" onclick="adjustBreak('plus')">+</button>
+      </div>
+    </div>
+    
+
+</body>
+<script src="./assets/js/Pmain.js"></script>
+
+
+</html>
